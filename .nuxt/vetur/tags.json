@@ -1,0 +1,29 @@
+{
+  "AboutUs": {
+    "description": "Auto imported from components/AboutUs.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/footer.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/Header.vue"
+  },
+  "MainHeader": {
+    "description": "Auto imported from components/MainHeader.vue"
+  },
+  "NavHeader": {
+    "description": "Auto imported from components/NavHeader.vue"
+  },
+  "Portfolio": {
+    "description": "Auto imported from components/Portfolio.vue"
+  },
+  "ReadyProject": {
+    "description": "Auto imported from components/ReadyProject.vue"
+  },
+  "Services": {
+    "description": "Auto imported from components/Services.vue"
+  },
+  "SiteHeader": {
+    "description": "Auto imported from components/SiteHeader.vue"
+  }
+}
