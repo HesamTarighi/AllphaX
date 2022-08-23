@@ -1,0 +1,25 @@
+{
+  "entry": "server.js",
+  "files": {
+    "components/about-us.js": "components/about-us.js",
+    "components/main-header.js": "components/main-header.js",
+    "components/nav-header.js": "components/nav-header.js",
+    "components/portfolio.js": "components/portfolio.js",
+    "components/ready-project.js": "components/ready-project.js",
+    "components/services.js": "components/services.js",
+    "components/site-header.js": "components/site-header.js",
+    "pages/index.js": "pages/index.js",
+    "server.js": "server.js"
+  },
+  "maps": {
+    "components/about-us.js": "components/about-us.js.map",
+    "components/main-header.js": "components/main-header.js.map",
+    "components/nav-header.js": "components/nav-header.js.map",
+    "components/portfolio.js": "components/portfolio.js.map",
+    "components/ready-project.js": "components/ready-project.js.map",
+    "components/services.js": "components/services.js.map",
+    "components/site-header.js": "components/site-header.js.map",
+    "pages/index.js": "pages/index.js.map",
+    "server.js": "server.js.map"
+  }
+}
