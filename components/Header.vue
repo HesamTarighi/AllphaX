@@ -1,15 +1,14 @@
 <template>
   <header class="w-full relative header">
     <nav class="w-full px-16 py-4">
-      <div class="flex justify-around">
+      <div class="flex justify-around items-center gap-2">
         <h1>
-        <a href="/" class="text-4xl">
-          <span>Allpha</span>
-          <span class="text-imp">X</span>
-        </a>
+          <a href="/" class="lg:text-4xl md:text-2xl">
+            <span>Allpha</span>
+            <span class="text-imp">X</span>
+          </a>
         </h1>
-        <ul class="flex relative space-x-12">
-
+        <ul class="flex relative lg:text-lg lg:space-x-12 md:space-x-6 md:text-sm">
           <span class="slider-link" :style="`left:${sliderPos}px; width:${sliderWidth}px;`"></span>
 
           <li @click.prevent="link('home')" :class="selectLink == 'home' ? 'active' : ''" ref="home">
@@ -17,59 +16,53 @@
               Home
             </a>
           </li>
-
           <li @click.prevent="link('project')" :class="selectLink == 'project' ? 'active' : ''" ref="project">
             <a href="/">
               Porject Registration
             </a>
           </li>
-
           <li @click.prevent="link('port')" :class="selectLink == 'port' ? 'active' : ''" ref="port">
             <a href="/">
               Portfolio
             </a>
           </li>
-
           <li @click.prevent="link('services')" :class="selectLink == 'services' ? 'active' : ''" ref="services">
             <a href="/">
               Services
             </a>
           </li>
-
           <li @click.prevent="link('about')" :class="selectLink == 'about' ? 'active' : ''" ref="about">
             <a href="/">
               About
             </a>
           </li>
-
           <li @click.prevent="link('contact')" :class="selectLink == 'contact' ? 'active' : ''" ref="contact">
             <a href="/">
               ContactUs
             </a>
           </li>
-
         </ul>
-        <button class="px-8 py-1 bg-imp rounded-full text-lg"> Sign In </button>
+        <button class="lg:px-8 py-1 bg-imp rounded-full lg:text-lg md:text-sm md:px-6"> Sign In </button>
       </div>
     </nav>
 
-    <section class="grid grid-cols-2 px-48 py-16">
+    <section class="grid grid-cols-2 lg:px-48 py-16 md:px-12">
       <div class="flex flex-col space-y-6 justify-center">
-        <a href="/" class="text-7xl">
+        <a href="/" class="lg:text-7xl md:text-6xl">
           <span>Allpha</span>
           <span class="text-imp">X</span>
         </a>
-        <strong class="text-5xl text-imp">
+        <strong class="lg:text-5xl text-imp md:text-4xl">
           Web Design Team
         </strong>
-        <p class="text-lg leading-6 opacity-70">
+        <p class="lg:text-lg leading-6 opacity-70 md:text-md">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nisi fuga voluptas amet harum architecto sint vero blanditiis recusandae iste at aut error soluta, modi inventore, maiores, mollitia unde nemo!
         </p>
         <div>
           <button class="px-8 py-2 bg-imp rounded-full text-lg"> Design order </button>
         </div>
       </div>
-      <div> <img src="/image/illestrator/team3.png" alt=""> </div>
+      <div> <img src="/image/illestrator/team3.png" class="xl:w-full md:w-[90%]"> </div>
     </section>
   </header>
 </template>
@@ -154,5 +147,21 @@
     border-bottom-right-radius: 400px;
     transform: rotate(-3deg);
     z-index: -1;
+  }
+
+  @media screen and (min-width: 1400px) {
+    .header::before {
+      top: -6%;
+      width: 105%;
+      height: 105%;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .header::before {
+      top: -8%;
+      width: 120%;
+      height: 110%;
+    }
   }
 </style>
