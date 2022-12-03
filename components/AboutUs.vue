@@ -7,7 +7,7 @@
       </strong>
       <div class="flex space-x-40">
         <div class="w-1/3"> <img src="/image/illestrator/aboutus.png" alt=""> </div>
-        <div class="w-1/2 h-1/2">
+        <div class="xl:w-1/2 xl:h-1/2 sm:w-full sm:h-full">
           <VueSlickCarousel :arrows="false" :dots="true" class="rounded-xl shadow-lg p-12">
             <div class="space-y-8">
               <p class="text-gray-700 opacity-70">
