@@ -3,12 +3,12 @@
     <nav class="w-full px-16 py-4">
       <div class="flex justify-around items-center gap-2">
         <h1>
-          <a href="/" class="lg:text-4xl md:text-2xl">
+          <a href="/" class="xl:text-4xl lg:text-3xl md:text-2xl">
             <span>Allpha</span>
             <span class="text-imp">X</span>
           </a>
         </h1>
-        <ul class="flex relative lg:text-lg lg:space-x-12 md:space-x-6 md:text-sm">
+        <ul class="flex relative xl:text-lg xl:space-x-12 lg:text-base lg:space-x-8 md:space-x-4 md:text-sm">
           <span class="slider-link" :style="`left:${sliderPos}px; width:${sliderWidth}px;`"></span>
 
           <li @click.prevent="link('home')" :class="selectLink == 'home' ? 'active' : ''" ref="home">
@@ -42,20 +42,21 @@
             </a>
           </li>
         </ul>
-        <button class="lg:px-8 py-1 bg-imp rounded-full lg:text-lg md:text-sm md:px-6"> Sign In </button>
+        <button class="bg-imp rounded-full xl:text-lg xl:px-8 lg:text-base lg:py-1 md:text-sm md:px-6 md:py-1 signin-btn"> Sign In </button>
+        <button class="bg-imp rounded-full px-2 py-1 hidden user-icon-btn"> <fa icon="user" /> </button>
       </div>
     </nav>
 
-    <section class="grid grid-cols-2 lg:px-48 py-16 md:px-12">
+    <section class="grid grid-cols-2 xl:px-48 py-16 md:px-12">
       <div class="flex flex-col space-y-6 justify-center">
-        <a href="/" class="lg:text-7xl md:text-6xl">
+        <a href="/" class="xl:text-7xl md:text-6xl">
           <span>Allpha</span>
           <span class="text-imp">X</span>
         </a>
-        <strong class="lg:text-5xl text-imp md:text-4xl">
+        <strong class="xl:text-5xl text-imp md:text-4xl">
           Web Design Team
         </strong>
-        <p class="lg:text-lg leading-6 opacity-70 md:text-md">
+        <p class="xl:text-lg leading-6 opacity-70 md:text-base">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nisi fuga voluptas amet harum architecto sint vero blanditiis recusandae iste at aut error soluta, modi inventore, maiores, mollitia unde nemo!
         </p>
         <div>
@@ -138,22 +139,41 @@
 
   .header::before {
     content: '';
-    width: 105%;
-    height: 105%;
+    width: 110%;
+    min-height: 105%;
     background-color: #121934;
     position: absolute;
     top: -6%;
-    left: -2%;
+    left: -5%;
     border-bottom-right-radius: 400px;
     transform: rotate(-3deg);
     z-index: -1;
   }
 
+  @media screen and (max-width: 925px) {
+    .signin-btn {
+      display: none;
+    }
+
+    .user-icon-btn {
+      display: block;
+    }
+
+    nav ul {
+      font-size: 13.5px;
+    }
+
+    nav h1 a {
+      font-size: 22px;
+    }
+  }
+
   @media screen and (min-width: 1400px) {
     .header::before {
       top: -6%;
-      width: 105%;
-      height: 105%;
+      left: -5%;
+      width: 110%;
+      min-height: 105%;
     }
   }
 
@@ -161,7 +181,7 @@
     .header::before {
       top: -8%;
       width: 120%;
-      height: 110%;
+      min-height: 110%;
     }
   }
 </style>
