@@ -3,13 +3,13 @@
     <nav class="w-full px-16 py-4">
       <div class="flex justify-around items-center gap-2">
         <h1>
-          <a href="/" class="xl:text-4xl lg:text-3xl md:text-2xl">
+          <a href="/" class="xl:text-4xl lg:text-3xl md:text-2xl sm:text-lg">
             <span>Allpha</span>
             <span class="text-imp">X</span>
           </a>
         </h1>
         <ul class="flex relative xl:text-lg xl:space-x-12 lg:text-base lg:space-x-8 md:space-x-4 md:text-sm">
-          <span class="slider-link" :style="`left:${sliderPos}px; width:${sliderWidth}px;`"></span>
+          <!-- <span class="slider-link" :style="`left:${sliderPos}px; width:${sliderWidth}px;`"></span> -->
 
           <li @click.prevent="link('home')" :class="selectLink == 'home' ? 'active' : ''" ref="home">
             <a href="/">
@@ -42,28 +42,28 @@
             </a>
           </li>
         </ul>
-        <button class="bg-imp rounded-full xl:text-lg xl:px-8 lg:text-base lg:py-1 md:text-sm md:px-6 md:py-1 signin-btn"> Sign In </button>
+        <button class="bg-imp rounded-full xl:text-lg xl:px-8 lg:text-base sm:text-sm sm:px-6 sm:py-1 signin-btn"> Sign In </button>
         <button class="bg-imp rounded-full px-2 py-1 hidden user-icon-btn"> <fa icon="user" /> </button>
       </div>
     </nav>
 
-    <section class="grid grid-cols-2 xl:px-48 py-16 md:px-12">
+    <section class="grid py-16 lg:px-32 xl:px-36 2xl:px-48 lg:grid-cols-2 sm:grid-cols-1 sm:px-24">
       <div class="flex flex-col space-y-6 justify-center">
-        <a href="/" class="xl:text-7xl md:text-6xl">
+        <a href="/" class="xl:text-6xl md:text-5xl sm:text-4xl">
           <span>Allpha</span>
           <span class="text-imp">X</span>
         </a>
-        <strong class="xl:text-5xl text-imp md:text-4xl">
+        <strong class="text-imp xl:text-5xl md:text-2xl">
           Web Design Team
         </strong>
-        <p class="xl:text-lg leading-6 opacity-70 md:text-base">
+        <p class="leading-6 opacity-70 xl:text-lg lg:text-base md:text-sm">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nisi fuga voluptas amet harum architecto sint vero blanditiis recusandae iste at aut error soluta, modi inventore, maiores, mollitia unde nemo!
         </p>
         <div>
-          <button class="px-8 py-2 bg-imp rounded-full text-lg"> Design order </button>
+          <button class="xl:px-8 xl:py-2 sm:px-6 sm:py-1 sm:text-sm xl:text-lg lg:text-base bg-imp rounded-full"> Design order </button>
         </div>
       </div>
-      <div> <img src="/image/illestrator/team3.png" class="xl:w-full md:w-[90%]"> </div>
+      <div class="flex items-center"> <img src="/image/illestrator/team3.png" class="w-full lg:block sm:hidden"> </div>
     </section>
   </header>
 </template>
@@ -133,10 +133,6 @@
     color: #F35444 !important;
   }
 
-  .header {
-    height: 97vh;
-  }
-
   .header::before {
     content: '';
     width: 110%;
@@ -148,6 +144,12 @@
     border-bottom-right-radius: 400px;
     transform: rotate(-3deg);
     z-index: -1;
+  }
+
+  @media screen and (min-width: 1300px) {
+    .header {
+      min-height: 90vh !important;
+    }
   }
 
   @media screen and (max-width: 925px) {
@@ -178,6 +180,10 @@
   }
 
   @media screen and (min-width: 768px) {
+    .header {
+      min-height: 65vh;
+    }
+
     .header::before {
       top: -8%;
       width: 120%;
