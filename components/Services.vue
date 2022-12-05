@@ -1,6 +1,6 @@
 <template>
   <section class="bg-gray-50 flex flex-col items-center">
-    <div class="w-4/5 space-y-10">
+    <div class="xl:w-4/5 lg:w-full sm:w-4/5 space-y-10">
       <strong class="self-start text-3xl">
         <span class="text-gray-900">Our Featured</span>
         <span class="text-imp">Services</span>

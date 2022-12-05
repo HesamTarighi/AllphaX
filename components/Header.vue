@@ -47,7 +47,7 @@
       </div>
     </nav>
 
-    <section class="grid py-16 lg:px-32 xl:px-36 2xl:px-48 lg:grid-cols-2 sm:grid-cols-1 sm:px-24">
+    <section class="grid py-16 lg:px-32 2xl:px-48 lg:grid-cols-2 sm:grid-cols-1 sm:px-24">
       <div class="flex flex-col space-y-6 justify-center">
         <a href="/" class="xl:text-6xl md:text-5xl sm:text-4xl">
           <span>Allpha</span>
@@ -60,7 +60,7 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nisi fuga voluptas amet harum architecto sint vero blanditiis recusandae iste at aut error soluta, modi inventore, maiores, mollitia unde nemo!
         </p>
         <div>
-          <button class="xl:px-8 xl:py-2 sm:px-6 sm:py-1 sm:text-sm xl:text-lg lg:text-base bg-imp rounded-full"> Design order </button>
+          <button class="xl:px-8 sm:px-6 sm:py-2 sm:text-sm xl:text-lg lg:text-base bg-imp rounded-full"> Design order </button>
         </div>
       </div>
       <div class="flex items-center"> <img src="/image/illestrator/team3.png" class="w-full lg:block sm:hidden"> </div>
