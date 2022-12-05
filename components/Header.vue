@@ -148,7 +148,7 @@
 
   @media screen and (min-width: 1300px) {
     .header {
-      min-height: 90vh !important;
+      min-height: 93vh !important;
     }
   }
 

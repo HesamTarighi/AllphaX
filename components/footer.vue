@@ -1,7 +1,7 @@
 <template>
   <footer>
-    <div class="px-24 py-8 grid grid-cols-2">
-      <div class="w-7/8">
+    <div class="2xl:px-24 xl:px-12 sm:px-8 py-8 grid grid-cols-2 sm:gap-8">
+      <div class="xl:w-5/6 2xl:w-6/7 sm:w-full">
         <div class="text-2xl">
           <span class="text-gray-900"> About Allpha </span>
           <span class="text-imp"> X </span>
@@ -10,7 +10,7 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi consequuntur, iusto dolor omnis atque nam inventore, assumenda laboriosam autem tempora minus aperiam consectetur laborum id illum a error! Optio, adipisci!
         </div>
       </div>
-      <div class="flex justify-around">
+      <div class="flex justify-around sm:space-x-8 xl:space-x-0">
         <div>
           <b class="text-2xl text-gray-900 relative title-footer-links"> Links </b>
           <ul class="pt-2 space-y-3">
