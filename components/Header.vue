@@ -49,11 +49,11 @@
 
     <section class="grid py-16 lg:px-32 2xl:px-48 lg:grid-cols-2 sm:grid-cols-1 sm:px-24">
       <div class="flex flex-col space-y-6 justify-center">
-        <a href="/" class="xl:text-6xl md:text-5xl sm:text-4xl">
+        <a href="/" class="2xl:text-6xl md:text-5xl sm:text-4xl">
           <span>Allpha</span>
           <span class="text-imp">X</span>
         </a>
-        <strong class="text-imp xl:text-5xl md:text-2xl">
+        <strong class="text-imp 2xl:text-5xl md:text-2xl">
           Web Design Team
         </strong>
         <p class="leading-6 opacity-70 xl:text-lg lg:text-base md:text-sm">
