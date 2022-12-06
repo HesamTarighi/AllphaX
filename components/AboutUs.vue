@@ -1,35 +1,23 @@
 <template>
   <section class="flex flex-col items-center">
-    <div class="w-4/5 space-y-10">
+    <div class="xl:w-4/5 lg:w-full sm:w-4/5 space-y-10">
       <strong class="text-3xl">
         <span class="text-gray-900">What Our Clients Say</span>
         <span class="text-imp">About Us</span>
       </strong>
-      <div class="flex space-x-40">
-        <div class="2xl:w-1/3 xl:w-3/4 lg:w-full lg:block sm:hidden"> <img src="/image/illestrator/aboutus.png" alt=""> </div>
-        <div class="xl:w-1/2 xl:h-1/2 sm:w-full sm:h-full">
-          <VueSlickCarousel :arrows="false" :dots="true" class="rounded-xl shadow-lg p-12">
-            <div class="space-y-8">
+      <div class="grid lg:grid-cols-2 sm:grid-cols-1 items-center gap-8">
+        <div class="2xl:w-4/5 lg:w-full lg:block sm:hidden flex items-center"> <img src="/image/illestrator/aboutus.png" alt=""> </div>
+        <div class="w-full">
+          <VueSlickCarousel :arrows="false" :dots="true" class="rounded-xl shadow-lg 2xl:p-12 xl:p-9 lg:p-6 sm:p-12">
+            <div class="space-y-8" v-for="(developer, index) in developers" :key="index">
               <p class="text-gray-700 opacity-70">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum mollitia id voluptates dolor, deserunt ducimus voluptate itaque provident minima ad voluptatum sequi aspernatur? Itaque molestiae nesciunt dicta laborum eveniet delectus.
+                {{ developer.developerDescription }}
               </p>
               <div class="flex items-center space-x-5">
-                <div class="w-24 rounded-full overflow-hidden"> <img src="/image/illestrator/404.jpg" alt=""> </div>
+                <div class="w-24 rounded-full overflow-hidden"> <img :src="developer.developerPicture" alt=""> </div>
                 <div>
-                  <div class="text-gray-900">Hesam Tarighi</div>
-                  <div class="text-gray-700 opacity-70"> Web </div>
-                </div>
-              </div>
-            </div>
-            <div class="space-y-8">
-              <p class="text-gray-700 opacity-70">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum mollitia id voluptates dolor, deserunt ducimus voluptate itaque provident minima ad voluptatum sequi aspernatur? Itaque molestiae nesciunt dicta laborum eveniet delectus.
-              </p>
-              <div class="flex items-center space-x-5">
-                <div class="w-24 rounded-full overflow-hidden"> <img src="/image/illestrator/404.jpg" alt=""> </div>
-                <div>
-                  <div class="text-gray-900">Hesam Tarighi</div>
-                  <div class="text-gray-700 opacity-70"> Web </div>
+                  <div class="text-gray-900">{{ developer.developerName }}</div>
+                  <div class="text-gray-700 opacity-70"> {{ developer.developerProficiency }} </div>
                 </div>
               </div>
             </div>
@@ -44,9 +32,30 @@
   import VueSlickCarousel from 'vue-slick-carousel'
   import 'vue-slick-carousel/dist/vue-slick-carousel.css'
   import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
+
   export default {
-    name: 'MyComponent',
-    components: { VueSlickCarousel },
+    components: {
+      VueSlickCarousel
+    },
+
+    data() {
+      return {
+        developers: [
+          {
+            developerName: 'Hesam Tarighi',
+            developerDescription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit, deserunt ducimus voluptate itaque provident minima ad voluptatum sequi aspernatur?',
+            developerProficiency: 'Web',
+            developerPicture: '/image/illestrator/404.jpg'
+          },
+          {
+            developerName: 'Hesam Tarighi',
+            developerDescription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit, deserunt ducimus voluptate itaque provident minima ad voluptatum sequi aspernatur?',
+            developerProficiency: 'Web',
+            developerPicture: '/image/illestrator/404.jpg'
+          }
+        ]
+      }
+    }
   }
 </script>
 

@@ -1,7 +1,7 @@
 <template>
   <section class="flex justify-center">
-    <div class="w-4/5 flex justify-evenly space-x-16">
-      <div class="xl:w-1/2 lg:w-4/5 lg:block sm:hidden self-center"> <img src="/image/illestrator/portfolio.png"> </div>
+    <div class="xl:w-4/5 lg:w-full sm:w-4/5 flex justify-evenly lg:space-x-16">
+      <div class="2xl:w-1/2 xl:w-2/3 lg:w-2/3 lg:block sm:hidden self-center"> <img src="/image/illestrator/portfolio.png"> </div>
       <div class="sm:w-full lg:w-full space-y-10 py-16">
         <strong class="flex flex-col xl:text-3xl sm:text-2xl">
           <span class="text-gray-800">Web Design Company You Can</span>
@@ -25,14 +25,4 @@
       -webkit-box-orient: vertical;
     }
   }
-
-  /* @media screen and (max-width: 1024px) {
-    strong {
-      font-size: 17px;
-    }
-
-    p {
-      font-size: 15px;
-    }
-  } */
 </style>
