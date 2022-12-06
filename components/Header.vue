@@ -6,7 +6,7 @@
           <fa icon="bars" />
         </button>
         <h1>
-          <a href="/" class="xl:text-3xl lg:text-2xl md:text-xl xs:text-lg">
+          <a href="/" class="xl:text-3xl lg:text-2xl xs:text-xl">
             <span>Allpha</span>
             <span class="text-imp">X</span>
           </a>
