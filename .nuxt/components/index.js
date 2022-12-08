@@ -1,12 +1,12 @@
-export { default as AboutUs } from '../..\\components\\AboutUs.vue'
-export { default as Footer } from '../..\\components\\footer.vue'
-export { default as Header } from '../..\\components\\Header.vue'
-export { default as MainHeader } from '../..\\components\\MainHeader.vue'
-export { default as NavHeader } from '../..\\components\\NavHeader.vue'
-export { default as Portfolio } from '../..\\components\\Portfolio.vue'
-export { default as ReadyProject } from '../..\\components\\ReadyProject.vue'
-export { default as Services } from '../..\\components\\Services.vue'
-export { default as SiteHeader } from '../..\\components\\SiteHeader.vue'
+export const AboutUs = () => import('../..\\components\\AboutUs.vue' /* webpackChunkName: "components/about-us" */).then(c => wrapFunctional(c.default || c))
+export const Footer = () => import('../..\\components\\Footer.vue' /* webpackChunkName: "components/footer" */).then(c => wrapFunctional(c.default || c))
+export const Header = () => import('../..\\components\\Header.vue' /* webpackChunkName: "components/header" */).then(c => wrapFunctional(c.default || c))
+export const MainHeader = () => import('../..\\components\\MainHeader.vue' /* webpackChunkName: "components/main-header" */).then(c => wrapFunctional(c.default || c))
+export const NavHeader = () => import('../..\\components\\NavHeader.vue' /* webpackChunkName: "components/nav-header" */).then(c => wrapFunctional(c.default || c))
+export const Portfolio = () => import('../..\\components\\Portfolio.vue' /* webpackChunkName: "components/portfolio" */).then(c => wrapFunctional(c.default || c))
+export const ReadyProject = () => import('../..\\components\\ReadyProject.vue' /* webpackChunkName: "components/ready-project" */).then(c => wrapFunctional(c.default || c))
+export const Services = () => import('../..\\components\\Services.vue' /* webpackChunkName: "components/services" */).then(c => wrapFunctional(c.default || c))
+export const SiteHeader = () => import('../..\\components\\SiteHeader.vue' /* webpackChunkName: "components/site-header" */).then(c => wrapFunctional(c.default || c))
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {
